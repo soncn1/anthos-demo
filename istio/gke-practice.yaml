@@ -1,0 +1,9 @@
+apiVersion: install.istio.io/v1alpha1
+kind: IstioOperator
+spec:
+  values:
+    global:
+      meshID: proj-1080734203311 # mesh_id label
+      multiCluster:
+        clusterName: gke-practice # Tên của cluster trên anthos
+      network: network1

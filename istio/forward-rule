@@ -1,0 +1,29 @@
+- name: status-port
+    nodePort: 31942
+    port: 15021
+    protocol: TCP
+    targetPort: 15021
+  - name: tls
+    nodePort: 30438
+    port: 15443
+    protocol: TCP
+    targetPort: 15443
+  - name: tls-istiod
+    nodePort: 31310
+    port: 15012
+    protocol: TCP
+    targetPort: 15012
+  - name: tls-webhook
+    nodePort: 31472
+    port: 15017
+    protocol: TCP
+    targetPort: 15017
+
+PUBLICIP:port => MASTERNODE:NODEPORT
+NAT           => RULE
+15021 => 31942
+15443 => 30438
+15012 => 31310
+15017 => 31472
+
+*Luu y, voi moi cluster khac nhau nodeport se thay doi, tao rule cho pfsence giong nhu tren

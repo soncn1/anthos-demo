@@ -1,0 +1,5 @@
+istio/gke-istio/*
+istio/istio-1.13.4-asm.4/*
+istio/op-istio/*
+istio/istio-1.13.4-asm.4-linux-amd64.tar.gz
+istio/asmcli

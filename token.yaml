@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: anthos-token
+  annotations:
+    # Map với tên của serviceaccount đã tạo
+    kubernetes.io/service-account.name: anthos
+  namespace: kube-system
+type: kubernetes.io/service-account-token
