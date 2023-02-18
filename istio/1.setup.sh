@@ -1,3 +1,4 @@
+rm -rf asmcli istio-1.13.4-asm.4*
 curl https://storage.googleapis.com/csm-artifacts/asm/asmcli_1.13 > asmcli
 chmod +x asmcli
 
