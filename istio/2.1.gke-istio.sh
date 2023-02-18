@@ -1,4 +1,5 @@
 # output dir
+rm -rf gke-istio/
 mkdir gke-istio/
 # gen config
 ./asmcli install --fleet_id anthos-on-gcp-1 \
