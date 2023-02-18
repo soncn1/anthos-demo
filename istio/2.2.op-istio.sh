@@ -1,5 +1,6 @@
 # output dir
 # sua lai tt folder cho dong bo
+rm -rf op-istio/
 mkdir op-istio/
 # gen config
 ./asmcli install --fleet_id anthos-on-gcp-1 \
